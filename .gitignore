@@ -7,3 +7,4 @@
 *.o
 *.a
 src/engine/tests/*_TEST
+.DS_Store
