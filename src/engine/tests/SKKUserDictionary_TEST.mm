@@ -2,8 +2,18 @@
 #include <iostream>
 #include "SKKLocalUserDictionary.h"
 #include "MockCompletionHelper.h"
+#import <XCTest/XCTest.h>
 
-int main() {
+@interface SKKUserDictionary_TEST: XCTestCase
+@end
+
+@implementation SKKUserDictionary_TEST
+
+- (void)setUp {
+    [[NSFileManager defaultManager] changeCurrentDirectoryPath: @(__FILE__).stringByDeletingLastPathComponent];
+}
+
+- (void)test {
     SKKLocalUserDictionary dict;
     SKKCandidateSuite suite;
 
@@ -111,3 +121,5 @@ int main() {
 
     dict.Register(SKKEntry("#"), SKKCandidate("456"));
 }
+
+@end
