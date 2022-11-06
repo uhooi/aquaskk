@@ -115,7 +115,7 @@
     } else {
         [[[NSColor blackColor] colorWithAlphaComponent:0.1] setFill];
     }
-    NSRectFillUsingOperation(focus, NSCompositeSourceOver);
+    NSRectFillUsingOperation(focus, NSCompositingOperationSourceOver);
 
     [[NSColor windowFrameColor] setStroke];
     [NSBezierPath strokeRect:focus];

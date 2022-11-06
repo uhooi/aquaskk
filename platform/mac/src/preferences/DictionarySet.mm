@@ -93,7 +93,7 @@ static NSString* DictionaryRowsType = @"DictionaryRowsType";
 
     [panel setDirectoryURL:dirurl];
     [panel beginSheetModalForWindow:prefView completionHandler:^(NSInteger result) {
-        if(result == NSOKButton) {
+        if(result == NSModalResponseOK) {
             [[self selection] setValue:[[panel URL] path]
                                 forKey:SKKDictionarySetKeys::location];
         }
