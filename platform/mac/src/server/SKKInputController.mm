@@ -398,6 +398,8 @@
         [self changeInputMode:context_.selectedKeyboardInputSource];
         return system;
     }
+
+    return current;
 }
 
 - (void)cancelKeyEventForASCII {

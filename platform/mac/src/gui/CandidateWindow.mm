@@ -84,7 +84,7 @@
     [window_ orderOut:nil];
 }
 
-- (int)indexOfLabel:(char)label {
+- (NSUInteger)indexOfLabel:(char)label {
     NSString* target = [NSString stringWithFormat:@"%c", label];
     NSRange result = [labels_ rangeOfString:target options:NSCaseInsensitiveSearch];
 

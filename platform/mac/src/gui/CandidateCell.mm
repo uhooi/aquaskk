@@ -36,7 +36,7 @@
 - (id)initWithFont:(NSFont*)font {
     if(self = [super init]) {
 	entry_ = [[NSMutableAttributedString alloc] init];
-	attributes_ = [[NSDictionary dictionaryWithObjectsAndKeys:
+	attributes_ = [[NSMutableDictionary dictionaryWithObjectsAndKeys:
                     font, NSFontAttributeName,
                     [NSColor labelColor], NSForegroundColorAttributeName,
                     nil]
